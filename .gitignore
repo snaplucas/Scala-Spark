@@ -1,2 +1,9 @@
 *.class
 *.log
+.idea/
+build.sbt
+project/build.properties
+project/plugins.sbt
+project/project/
+src/
+target/
