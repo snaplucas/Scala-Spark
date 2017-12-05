@@ -16,9 +16,9 @@ object WordCounter {
     val counts = textFile.flatMap(line => line.split(" "))
       .map(word => (word, 1))
       .reduceByKey(_ + _)
+      .sortBy(pair => pair._2, ascending = false)
 
-    val sortedCounts = counts.sortBy(pair => pair._2, ascending = false)
-    sortedCounts.saveAsTextFile("file:////Users/lucasrodrigues/Documents/WordCounter")
+    counts.saveAsTextFile("file:////Users/lucasrodrigues/Documents/WordCounter")
   }
 
 }
