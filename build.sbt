@@ -1,7 +1,7 @@
 name := "Scala-Spark"
 
-version := "0.1"
+version := "1.0"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.11.8"
 
-libraryDependencies += "org.apache.spark" % "spark-core_2.10" % "2.2.0" % "provided"
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.2.0"
