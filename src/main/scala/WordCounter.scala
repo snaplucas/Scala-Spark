@@ -7,7 +7,6 @@ object WordCounter {
       .setMaster("local[2]")
       .setAppName("CountingSheep")
 
-
     val sc = new SparkContext(config)
     sc.setLogLevel("ERROR")
 
